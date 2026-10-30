@@ -1,0 +1,2 @@
+-f ./android-wheels
+panda3d
