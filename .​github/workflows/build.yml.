@@ -3,6 +3,7 @@ name: Build Android AAB
 on:
   push:
     branches: [ main, master ]
+  workflow_dispatch:
 
 jobs:
   build:
@@ -49,5 +50,4 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: package
-        path: bin/*.aab
-
+          path: bin/*.aab
